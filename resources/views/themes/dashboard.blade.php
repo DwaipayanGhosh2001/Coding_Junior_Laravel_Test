@@ -1,7 +1,9 @@
 
 
 @extends('layouts/main')
-
+@push('title')
+    <title>Dashboard</title>
+@endpush
 @section('main-section')
 <div class="container-fluid px-0">
     <div class="main-body mt-5 pt-md-5">

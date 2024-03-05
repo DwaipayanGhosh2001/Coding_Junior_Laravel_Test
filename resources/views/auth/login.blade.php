@@ -1,6 +1,8 @@
 @extends('layouts.main')
 @section('main-section')
-
+@push('title')
+    <title>Login</title>
+@endpush
     <div class="content my-5">
         <div class="container-fluid">
         <div class="row">

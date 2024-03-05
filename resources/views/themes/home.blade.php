@@ -1,11 +1,13 @@
 @extends('layouts/main')
-
+@push('title')
+    <title>Home</title>
+@endpush
 @section('main-section')
 <section class="py-3 py-lg-5 py-xl-8">
     <div class="container overflow-hidden">
       <div class="row gy-5 gy-lg-0 align-items-lg-center justify-content-lg-between">
         <div class=" col-lg-7">
-          <h2 class="display-3 fw-bold mb-3">A Digital Dashboard Displayin User Details</h2>
+          <h2 class="display-3 fw-bold mb-3 text">A digital dashboard displaying user details</h2>
           <p class="fs-4 mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora sunt laboriosam necessitatibus?</p>
           <div class="d-grid gap-2 d-sm-flex">
            <a href="{{ auth()->check() ? route('dashboard') : route('login') }}"> <button class="getStartedBtn">Get Started</button></a>
